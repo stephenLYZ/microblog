@@ -1,0 +1,24 @@
+<%- include header %>
+<div class="jumbotron" style="padding-left: 50px;">
+		<h1>MicroBlog</h1>
+		<p>这是一个基于node.js的博客系统</p>
+		<% if (user) { %>
+			<p>Welcome! <%- user.name %>!</p>
+		<% } else { %>
+			<a href="/login" class="btn btn-lg btn-default">Login</a>
+			<a href="/reg" class="btn btn-lg btn-primary">Register</a>
+		<% } %>
+</div>
+<% posts.forEach(function(post,index){ %>
+	<div class="post">
+		<p><h2><a href="#"><%= post.title %></a></h2></p>
+		<p class="info">
+			作者：<a href="#"><%= post.name %></a> | 
+    		日期：<%= post.time.minute %>
+    	</p>
+    	<article>
+    		<%- post.post %>	
+    	</article>
+ 	</div>
+ <% }) %>
+<%- include footer %>

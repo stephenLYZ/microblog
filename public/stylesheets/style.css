@@ -1,0 +1,30 @@
+a {
+  color: #00B7FF;
+}
+footer{
+	text-align: center;
+	line-height: 50px;
+	background-color:  #101010;
+	color: #fff;
+}
+.body{
+	min-height: 700px;
+	padding-top: 50px;
+}
+.form-login{
+	margin-top: 50px;
+	padding-top:100px; 
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow:0 0 10px 0 rgba(0,0,0,0.05);
+	min-height: 400px;
+}
+.post{
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow:0 0 10px 0 rgba(0,0,0,0.05);
+	padding:20px 50px;
+	margin: 20px 0;
+
+}
+.post a{
+	color:#000;
+}
